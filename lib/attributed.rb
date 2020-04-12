@@ -1,0 +1,5 @@
+require 'attributed/authorized_attributes'
+require 'attributed/model'
+require 'models/attributed/item'
+require 'models/attributed/attributes_list'
+require 'generators/attributed_migration_generator'
