@@ -8,7 +8,7 @@ module Attributed
 
     module ClassMethods
       def attributed_through(association)
-        has_many :attributes_lists, through: association, class_name: 'Attributed::AttributesList', source: :attributes_list
+        has_many :attributes_lists, through: association, class_name: 'Attributed::AttributesList', source: :attributes_lists
       end
     end
 

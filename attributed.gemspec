@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'attributed'
-  s.version     = '1.0.1'
+  s.version     = '1.0.2'
   s.date        = '2020-09-24'
   s.summary     = "Attributes filters"
   s.description = "Configure permitted attributes that your users or roles can write on dynamically for each model"
