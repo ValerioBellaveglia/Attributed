@@ -2,8 +2,8 @@ module Attributed
   module AuthorizedAttributes
     extend ActiveSupport::Concern
 
-    def filter_authorized_attributes(attributes, item_name)
-      @current_user.authorized_attributes_for_item(item_name).map(&:to_sym).intersection attributes
+    def filter_authorized_attributes(attributes, item_name: nil)
+      @current_user.authorized_attributes_for_item(item_name || controller_name.singularize).map(&:to_sym).intersection attributes
     end
   end
 end
